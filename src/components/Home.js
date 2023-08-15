@@ -10,7 +10,7 @@ export default function Home() {
       {/*
       remember to implement get started page/login
        */}
-      <Link to="/get-started" className="get-started-button"><p>Get Started</p>
+      <Link to="/signup" className="get-started-button"><p>Get Started</p>
       </Link>
      
     </div>

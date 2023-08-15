@@ -19,13 +19,13 @@ export default function Nav() {
 
             <div className={`navlinks ${isOpen ? 'open' : ''}`}>
                 <li>
-                    <Link to="/" onClick={() => setIsOpen(false)}><p>Overview</p></Link>
-                </li>
-                <li>
-                    <Link to="/expenses" onClick={() => setIsOpen(false)}><p>Expenses</p></Link>
+                    <Link to="/overview" onClick={() => setIsOpen(false)}><p>Overview</p></Link>
                 </li>
                 <li>
                     <Link to="/budget" onClick={() => setIsOpen(false)}><p>Budget</p></Link>
+                </li>
+                <li>
+                    <Link to="/login" onClick={() => setIsOpen(false)}><p>Login</p></Link>
                 </li>
             </div>
         </nav>
