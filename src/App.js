@@ -1,11 +1,18 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import './style.css';
+import Nav from './components/Nav.js';
+import Home from './components/Home.js';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Router>
+      <Nav />
+    <Routes>
+      <Route path='/' Component={Home}/>
+    </Routes>
+    </Router>
   );
 }
